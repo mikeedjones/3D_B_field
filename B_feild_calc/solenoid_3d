@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov 21 11:59:15 2018
+
+@author: Michael
+"""
+
+import numpy as np
+
+def loop(R,start,end,N):
+    
+    coords=[]
+    
+    for i in range(0,N):
+        theta=start+i*((end-start)/N)
+        coords.append([R,i])
+    
+    return coords
+
+#def solenoid(R,dz,dr,nz,nr,N):
+    
